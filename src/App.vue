@@ -1,15 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ConfigForm from "./components/ConfigForm.vue";
+</script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <h1 class="header">Hi Ajo</h1>
-    </div>
-  </header>
+  <div class="container is-fluid">
+    <header>
+      <h1 class="title">App name</h1>
+    </header>
+    <config-form />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style scoped lang="scss">
+.container {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.title {
+  padding: 10px 10px;
+  text-align: center;
 }
 </style>
